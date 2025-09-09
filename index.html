@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+¿<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
@@ -21,7 +21,13 @@
     }
   </script>
   <style>
-    .grain { position: fixed; inset: -50%; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.035"/></svg>'); pointer-events:none; z-index:0; }
+    .grain { 
+      position: fixed; 
+      inset: -50%; 
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23n)" opacity="0.035"/></svg>'); 
+      pointer-events:none; 
+      z-index:0; 
+    }
     .backdrop-glass { backdrop-filter: blur(14px) saturate(1.1); }
   </style>
 </head>
@@ -35,7 +41,6 @@
   <main class="relative z-10 mx-auto max-w-xl px-6 py-12">
     <section class="relative rounded-3xl border border-white/10 bg-white/5 backdrop-glass shadow-2xl p-6 md:p-8">
       <div class="absolute right-4 top-4 flex items-center gap-2">
-       
         <button id="shareBtn" class="rounded-full border border-white/10 bg-white/10 px-3 py-2 text-xs font-medium hover:bg-white/20 active:scale-95 transition">
           Compartir
         </button>
@@ -43,19 +48,18 @@
 
       <div class="flex flex-col items-center text-center">
         <div class="relative">
-          <img src="Logo.svg" alt="Avatar" class="h-24 w-24 md:h-28 md:w-28  object-cover " style="width: 160px; height: 160px;" />
-          
+          <img src="Logo.svg" alt="Avatar" class="h-24 w-24 md:h-28 md:w-28 object-cover" style="width: 160px; height: 160px;" />
         </div>
-        <h1 class=" text-2xl md:text-3xl font-extrabold tracking-tight">Urbanoshop</h1>
+        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">Urbanoshop</h1>
         <p class="mt-2 max-w-md text-sm md:text-base text-slate-300">Ropa en tendencia • Envíos a toda Nicaragua </p>
         <div class="mt-3 flex flex-wrap items-center justify-center gap-2 text-[11px] text-slate-300">
           <span class="rounded-full border border-white/10 bg-white/10 px-2.5 py-1">Horario: 8:00 am – 5:00 pm</span>
           <span class="rounded-full border border-white/10 bg-white/10 px-2.5 py-1">Respuesta rápida</span>
-        
         </div>
       </div>
 
       <div class="mt-6 space-y-3">
+        <!-- WhatsApp -->
         <a href="https://wa.me/50588536545?text=Hola%20urbanoshop%2C%20vengo%20de%20tu%20Link%20in%20Bio" target="_blank" rel="noopener" class="group flex items-center gap-3 rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-3.5 hover:bg-emerald-500/15 hover:border-emerald-400/60 transition">
           <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/20">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12a10 10 0 1 1-18.86 5.51L2 22l4.63-1.21A10 10 0 0 1 22 12Z"/><path d="M8 12c.24 1.79 1.7 3.25 3.49 3.49"/><path d="M8 12v-1a4 4 0 0 1 7.77-1.64"/></svg>
@@ -67,35 +71,34 @@
           <span class="text-xs rounded-full border border-white/10 bg-white/10 px-2 py-1">Respuesta 1–5 min</span>
         </a>
 
-  
-
+        <!-- Instagram -->
         <a href="https://www.instagram.com/urbanoshop.nic/" target="_blank" rel="noopener" class="group flex items-center gap-3 rounded-2xl border border-pink-400/30 bg-pink-500/10 p-3.5 hover:bg-pink-500/15 hover:border-pink-400/60 transition">
           <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-pink-500/20">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           </div>
           <div class="flex-1">
             <p class="font-semibold leading-tight">Instagram</p>
-            <p class="text-xs text-slate-300">outfits </p>
+            <p class="text-xs text-slate-300">Outfits</p>
           </div>
         </a>
 
+        <!-- TikTok -->
         <a href="https://www.tiktok.com/@urbanoshop_nic?_t=ZM-8zZ0y6j60Hw&_r=1" target="_blank" rel="noopener" class="group flex items-center gap-3 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 p-3.5 hover:bg-cyan-500/15 hover:border-cyan-400/60 transition">
           <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/20">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12a4 4 0 1 1-4-4"/><path d="M16 3a6 6 0 0 0 6 6"/></svg>
           </div>
           <div class="flex-1">
             <p class="font-semibold leading-tight">TikTok</p>
-            <p class="text-xs text-slate-300"></p>
           </div>
         </a>
 
+        <!-- Facebook -->
         <a href="https://www.facebook.com/share/1DWbwfu7Zm/" target="_blank" rel="noopener" class="group flex items-center gap-3 rounded-2xl border border-blue-400/30 bg-blue-500/10 p-3.5 hover:bg-blue-500/15 hover:border-blue-400/60 transition">
           <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/20">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"/></svg>
           </div>
           <div class="flex-1">
             <p class="font-semibold leading-tight">Facebook</p>
-            <p class="text-xs text-slate-300"></p>
           </div>
         </a>
       </div>
@@ -106,39 +109,31 @@
     </section>
 
     <div class="mx-auto mt-6 text-center text-[11px] text-slate-400">
-      Hecho con ♥ 
+      Hecho con ♥
     </div>
   </main>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    const root = document.documentElement;
-    const themeBtn = document.getElementById('themeToggle');
-    const THEME_KEY = 'linkinbio-theme';
-    function applyTheme(mode){
-      if(mode === 'light'){
-        root.classList.add('light');
-        document.body.className = "min-h-screen font-sans antialiased bg-gradient-to-br from-slate-50 via-white to-slate-50 text-slate-900";
-      } else {
-        root.classList.remove('light');
-        document.body.className = "min-h-screen font-sans antialiased bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-100";
-      }
-      localStorage.setItem(THEME_KEY, mode);
-    }
-    applyTheme(localStorage.getItem(THEME_KEY) || 'dark');
-    themeBtn.addEventListener('click', ()=>{
-      const current = localStorage.getItem(THEME_KEY) || 'dark';
-      applyTheme(current === 'dark' ? 'light' : 'dark');
-    });
-
+    // === BOTÓN COMPARTIR ===
     const shareBtn = document.getElementById('shareBtn');
     shareBtn.addEventListener('click', async () => {
-      const shareData = { title: document.title, text: 'Mira mis links ✨', url: location.href };
+      const shareData = { 
+        title: document.title, 
+        text: 'Mira mis links ✨', 
+        url: location.href 
+      };
       if (navigator.share) {
-        try { await navigator.share(shareData); } catch(e){}
+        try { 
+          await navigator.share(shareData); 
+        } catch(e){} 
       } else {
-        try { await navigator.clipboard.writeText(shareData.url); shareBtn.textContent = 'Copiado!'; setTimeout(()=>shareBtn.textContent='Compartir',1500); } catch(e){}
+        try { 
+          await navigator.clipboard.writeText(shareData.url); 
+          shareBtn.textContent = 'Copiado!'; 
+          setTimeout(()=>shareBtn.textContent='Compartir',1500); 
+        } catch(e){} 
       }
     });
   </script>
